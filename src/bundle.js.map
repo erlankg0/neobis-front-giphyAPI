@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "bundle.js",
+  "mappings": ";;;;;;AAAa;AACb",
+  "sources": [
+    "webpack://giphyapi/./src/ts/index.ts"
+  ],
+  "sourcesContent": [
+    "\"use strict\";\nconsole.log('webpack');\n"
+  ],
+  "names": [],
+  "sourceRoot": ""
+}

@@ -2,10 +2,21 @@
   "dependencies": {
     "axios": "^1.6.7",
     "node-sass": "^9.0.0",
-    "sass": "^1.71.1",
     "typescript": "^5.4.2"
   },
   "scripts": {
-    "compile-sass": "node-sass --output-style compressed src/sass -o dist/css"
+    "compile-sass": "node-sass --output-style compressed src/sass -o src/css"
+  },
+  "name": "giphyapi",
+  "description": "neobis",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "ts-loader": "^9.5.1",
+    "webpack-cli": "^5.1.4"
   }
 }
