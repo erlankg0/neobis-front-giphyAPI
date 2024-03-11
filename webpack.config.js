@@ -12,17 +12,22 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test:  /\.s[ac]ss$/i,
+                test:  /\.sass$/,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
-                exclude: /node_modules/,
             }
         ],
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
+        fallback: {
+            "path": require.resolve("path-browserify"),
+            "os": require.resolve("os-browserify/browser"),
+            "crypto": require.resolve("crypto-browserify")
+        }
     },
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'src'),
     },
+
 };

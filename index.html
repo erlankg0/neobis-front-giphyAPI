@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/img/icons/favicon.svg" type="image/x-icon">
     <title>neobis-front-giphyAPI</title>
 </head>
 <body>
@@ -14,10 +15,11 @@
     <div class="container">
         <div class="header__content">
             <div class="header__logo">
-
+                <img src="src/img/icons/icon.svg" alt="logo"/>
             </div>
             <div class="header__search">
-
+                <input type="text" class="header__search-input" placeholder="some gift" id="search">
+                <label for="search" class="header__search-label"></label>
             </div>
         </div>
     </div>
@@ -25,9 +27,16 @@
 <main class="main">
     <div class="container">
         <div class="main__content">
+            <div class="gifts" id="gifts">
 
+                <!--                <div class="gift">-->
+                <!--                    <img src="src/img/giphy.gif" alt="image"/>-->
+                <!--                </div>-->
+
+            </div>
         </div>
     </div>
 </main>
+<script src="src/bundle.js" type="module"></script>
 </body>
 </html>
