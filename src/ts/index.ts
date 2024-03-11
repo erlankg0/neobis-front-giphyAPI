@@ -27,7 +27,6 @@ const renderGifts = (data: GiphyData[]) => {
     // Очистка контейнера для подарков перед отображением новых данных
     giftsContainer.innerHTML = '';
     // Перебор полученных данных и создание соответствующих элементов DOM для каждого гифа
-    console.log(data);
     data.forEach(gif => {
         console.log(gif.images.original.url);
         const giftElement = document.createElement('div');
