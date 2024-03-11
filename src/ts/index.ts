@@ -28,7 +28,6 @@ const renderGifts = (data: GiphyData[]) => {
     giftsContainer.innerHTML = '';
     // Перебор полученных данных и создание соответствующих элементов DOM для каждого гифа
     data.forEach(gif => {
-        console.log(gif.images.original.url);
         const giftElement = document.createElement('div');
         giftElement.classList.add('gift');
 
