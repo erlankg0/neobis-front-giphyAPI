@@ -8,6 +8,7 @@ html, body
   max-width: 141rem
   padding: 0 1.5rem
   margin: 0 auto
+@import "gifts"
 
 .header
   background: linear-gradient(70deg, blue, pink, #00ff00)
@@ -20,10 +21,16 @@ html, body
   &__logo
     display: flex
     align-items: center
+    gap: 1rem
 
     & > img
       height: 3rem
       width: 3rem
+
+    & > h1
+      color: lightblue
+      font-weight: bold
+      font-size: 2rem
 
   &__search
     display: flex
@@ -57,7 +64,7 @@ html, body
       content: ''
       width: 3rem
       height: 3rem
-      background-image: url("/src/img/icons/search.svg")
+      background-image: url("../img/icons/search.svg")
       background-position: center
       background-size: cover
       background-repeat: no-repeat
@@ -65,4 +72,11 @@ html, body
 
 body
   background: linear-gradient(70deg, purple, pink, red)
-@import "gifts"
+
+@media (max-width: 1024px)
+  .gifts
+    grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 768px)
+  .gifts
+    grid-template-columns: 1fr
