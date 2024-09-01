@@ -16,6 +16,12 @@
 Запуск осуществляется с помощью файла:
 
 ```bash
-index.html
 
 npm install
+
+npx webpack
+
+npm run compile-sass
+
+index.html
+
